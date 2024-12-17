@@ -43,6 +43,10 @@ class MainActivity : AppCompatActivity() {
 
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+            }else if (isLoginMode) {
+                // Navigate to SecondActivity on successful login
+                val intent = Intent(this, SecondActivity::class.java)
+                startActivity(intent)
             }
              else {
                 Toast.makeText(this, "Sign Up first to log in.", Toast.LENGTH_SHORT).show()
