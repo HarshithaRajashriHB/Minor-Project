@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Login Button Click Listener
+        // Login Button Click Listener
         loginButton.setOnClickListener {
             val email = emailField.text.toString().trim()
             val password = passwordField.text.toString().trim()
@@ -67,6 +68,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Invalid email or password. Please try again.", Toast.LENGTH_SHORT).show()
             }
         }
+
 
         // Toggle Text Click Listener
         toggleText.setOnClickListener {
