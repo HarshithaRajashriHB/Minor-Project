@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Scholator</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="caste_options">
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+    </string-array>
+
+    <string-array name="disability_options">
+        <item>None</item>
+        <item>Physical</item>
+        <item>Visual</item>
+        <item>Hearing</item>
+    </string-array>
+
 </resources>
