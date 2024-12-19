@@ -25,12 +25,12 @@ class SecondActivity : AppCompatActivity() {
             Scholarships(
                 "Bharti Airtel Scholarship Program",
                 "Bharti Airtel",
-                "Varies",
-                "<85 lakh>",
+                25000,
+                850000,
                 false,
                 "This scholarship aims to provide financial support to academically excellent students pursuing engineering courses. It focuses on empowering underprivileged students to achieve their academic and career aspirations.",
                 "https://bhartifoundation.org/bharti-airtel-scholarship/",                 // State
-                "India",          // Annual Family Income
+                "any",          // Annual Family Income
                 "any",                  // Caste
                 "Female",                   // Gender
                 false                      // Disability
@@ -38,8 +38,8 @@ class SecondActivity : AppCompatActivity() {
             Scholarships(
                 "Aspire Scholarship Program",
                 "SWAYAM Charitable Trust",
-                "varies",
-                "less than 6 lakh",  // Annual Family Income (if available)
+                30000,
+                600000,  // Annual Family Income (if available)
                 false,
                 " initiative of SWAYAM Charitable Trust that aims to provide financial support to underprivileged students pursuing B.Tech. courses at 11 prestigious engineering institutions across India",
                 "https://services.india.gov.in/service/detail/aspire-scholarship-kerala",  // Link (if available)
@@ -51,8 +51,8 @@ class SecondActivity : AppCompatActivity() {
             Scholarships(
                 "Mohan T Advani Centennial Scholarship Programme",
                 "Blue Star Foundation",
-                "upto 75000",
-                "Less than 2.5 LPA",
+                75000,
+                250000,
                 false,
                 "initiative of SWAYAM Charitable Trust that aims to provide financial support to underprivileged students pursuing B.Tech. courses at 11 prestigious engineering institutions across India.",
                 "https://www.bluestarfoundation.in/",   // Example state
@@ -65,25 +65,25 @@ class SecondActivity : AppCompatActivity() {
             Scholarships(
                 "Legrand Empowering Scholarship Program",
                 "Legrand",
-                "upto 65000 pa",
-                "any",          // Annual Family Income
+                65000,
+                -1,          // Annual Family Income
                false ,          // Income
                 "The Legrand Empowering Scholarship Program 2024-25, a Social Initiative of Group Legrand India, aims to provide financial support to meritorious girls, differently-abled girls, Covid-affected students, LGBTQ+ students and students with single parents or orphans for their higher education.",
                 "https://legrandscholarship.co.in/",          // Link (empty string for now if no link is provided)
-                "India",     // State
+                "any",     // State
                 "General",       // Caste
-                "Girl",       // Gender
+                "Female",       // Gender
                 false        // Disability
             ),
         Scholarships(
             "Ratan Tata Scholarship for Engineering Students",
             "Tata Group",
-            "Varies",
-            "upto 10000",          // Annual Family Income
+            30000,
+            100000,          // Annual Family Income
             false,          // Income
             "Tata Scholarship for Engineering students is offered by the Tata Education and Development Trust to facilitate the higher education of students. Tata Scholarships are offered by various philanthropic units of the Tata group.",
             "https://www.tatatrusts.org/our-work/individual-grants-programme/education-grants",          // Link (empty string for now if no link is provided)
-            "India",     // State
+            "any",     // State
             "any",       // Caste
             "any",       // Gender
             false        // Disability
