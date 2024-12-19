@@ -1,23 +1,46 @@
 <resources>
     <string name="app_name">Scholator</string>
+    <!-- Title for the form -->
+    <string name="form_title">Scholarship Eligibility Form</string>
+
+    <!-- Hint for the Name input field -->
+    <string name="hint_name">Full Name</string>
+
+    <!-- Hint for the Date of Birth input field -->
+    <string name="hint_dob">Date of Birth (DD/MM/YYYY)</string>
+
+    <!-- Hint for the State input field -->
+    <string name="hint_state">State</string>
+
+    <!-- Gender Options for the spinner -->
     <string-array name="gender_options">
         <item>Male</item>
         <item>Female</item>
         <item>Other</item>
     </string-array>
 
+    <!-- Caste Options for the spinner -->
     <string-array name="caste_options">
         <item>General</item>
         <item>OBC</item>
         <item>SC</item>
         <item>ST</item>
+        <item>Other</item>
     </string-array>
 
+    <!-- Disability Options for the spinner -->
     <string-array name="disability_options">
-        <item>None</item>
-        <item>Physical</item>
-        <item>Visual</item>
-        <item>Hearing</item>
+        <item>Yes</item>
+        <item>No</item>
     </string-array>
+
+    <!-- Hint for the Family Income input field -->
+    <string name="hint_income">Family Income (per annum)</string>
+
+    <!-- Hint for the Program Applied For input field -->
+    <string name="hint_program">Program Applied For</string>
+
+    <!-- Hint for the Scholarship Amount input field -->
+    <string name="hint_amount">Scholarship Amount Requested</string>
 
 </resources>

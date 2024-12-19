@@ -1,6 +1,8 @@
 // Package declaration
 package com.example.scholator
 
+import java.io.Serializable
+
 // Data class to hold the scholarship details
 data class Scholarships(
     val name: String,
@@ -14,4 +16,4 @@ data class Scholarships(
     val caste: String,         // Caste-based eligibility
     val gender: String,        // Gender-specific eligibility (e.g., Male/Female/Other)
     val disability: Boolean    // Whether it's for disabled students
-)
+) :Serializable

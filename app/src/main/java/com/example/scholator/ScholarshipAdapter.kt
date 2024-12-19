@@ -20,7 +20,7 @@ class ScholarshipAdapter(private val scholarshipList: List<Scholarships>) : Recy
     override fun onBindViewHolder(holder: ScholarshipViewHolder, position: Int) {
         val currentScholarship = scholarshipList[position]
         holder.scholarshipName.text = currentScholarship.name
-        holder.scholarshipDescription.text = currentScholarship.description
+        holder.scholarshipDescription.text = currentScholarship.offered_by
     }
 
     // Returns the number of items in the dataset
@@ -29,6 +29,6 @@ class ScholarshipAdapter(private val scholarshipList: List<Scholarships>) : Recy
     // ViewHolder class to hold references to views in the item layout
     class ScholarshipViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val scholarshipName: TextView = itemView.findViewById(R.id.scholarship_name)
-        val scholarshipDescription: TextView = itemView.findViewById(R.id.scholarship_description)
+        val scholarshipDescription: TextView = itemView.findViewById(R.id.scholarship_income)
     }
 }

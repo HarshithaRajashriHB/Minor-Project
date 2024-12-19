@@ -19,7 +19,7 @@
 
     <!-- Scholarship Description -->
     <TextView
-        android:id="@+id/scholarship_description"
+        android:id="@+id/scholarship_income"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="16sp"

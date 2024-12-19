@@ -319,7 +319,7 @@ class SecondActivity : AppCompatActivity() {
         }
 
         // Fetch the top 3 scholarships from the database
-        val scholarshipListing = dbHelper.getTopScholarships(3)
+        val scholarshipListing = dbHelper.getTopScholarships(7)
 
         // Set up RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.scholarshipsRecyclerView)

@@ -1,0 +1,45 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:elevation="4dp"
+    android:radius="8dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Scholarship Name -->
+        <TextView
+            android:id="@+id/scholarship_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scholarship Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Scholarship Description -->
+        <TextView
+            android:id="@+id/scholarship_offeredby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offered by"
+            android:textSize="16sp" />
+
+        <!-- Scholarship Link (Clickable) -->
+        <TextView
+            android:id="@+id/scholarship_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scholarship Link"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="8dp"
+            android:linksClickable="true" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
