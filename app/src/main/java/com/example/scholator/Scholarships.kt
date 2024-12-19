@@ -7,7 +7,7 @@ data class Scholarships(
     val offered_by: String,
     val amount: String,
     val income: String,        // Annual family income eligibility
-    val eligibility: String,
+    val merit: Boolean,
     val description: String,
     val link: String,
     val state: String,         // Applicable state

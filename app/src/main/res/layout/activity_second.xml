@@ -50,15 +50,15 @@
         android:id="@+id/heightlights"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Heighlights"
-        android:textSize="16sp"
+        android:text="Highlights"
+        android:textSize="25dp"
         android:textColor="@color/red"
         android:textStyle="bold"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/welcome_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="210dp"
         android:padding="16dp" />
 
     <!-- Scholarship Name -->
