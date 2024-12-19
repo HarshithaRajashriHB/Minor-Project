@@ -27,7 +27,7 @@ class SecondActivity : AppCompatActivity() {
                 "Bharti Airtel",
                 "Varies",
                 "<85 lakh>",
-                "Meritorious students pursuing engineering",
+                false,
                 "This scholarship aims to provide financial support to academically excellent students pursuing engineering courses. It focuses on empowering underprivileged students to achieve their academic and career aspirations.",
                 "https://bhartifoundation.org/bharti-airtel-scholarship/",                 // State
                 "India",          // Annual Family Income
@@ -35,24 +35,12 @@ class SecondActivity : AppCompatActivity() {
                 "Female",                   // Gender
                 false                      // Disability
             ),
-
             Scholarships(
                 "Aspire Scholarship Program",
                 "SWAYAM Charitable Trust",
                 "varies",
                 "less than 6 lakh",  // Annual Family Income (if available)
-                "Students joining the first-year of B.Tech. courses at any of the following 11 institutions can apply:\n" +
-                        "Indian Institute of Technology Kharagpur (IIT-Kharagpur)\n" +
-                        "Indian Institute of Technology Hyderabad (IIT-Hyderabad)\n" +
-                        "Indian Institute of Technology Patna (IIT-Patna)\n" +
-                        "Indian Institute of Technology Delhi (IIT-Delhi)\n" +
-                        "Indian Institute of Technology Bombay (IIT-Bombay)\n" +
-                        "Indian Institute of Technology Goa (IIT-Goa)\n" +
-                        "Indian Institute of Information Technology, Design & Manufacturing (IIITDM) Jabalpur\n" +
-                        "Indraprastha Institute of Information Technology Delhi (IIIT-Delhi)\n" +
-                        "Dr Shyama Prasad Mukherjee International Institute of Information Technology Naya Raipur (IIIT NR)\n" +
-                        "Jabalpur Engineering College\n" +
-                        "National Institute of Advanced Manufacturing Technology (NIAMT, Ranchi)",
+                false,
                 " initiative of SWAYAM Charitable Trust that aims to provide financial support to underprivileged students pursuing B.Tech. courses at 11 prestigious engineering institutions across India",
                 "https://services.india.gov.in/service/detail/aspire-scholarship-kerala",  // Link (if available)
                 "kerala",  // State
@@ -60,15 +48,12 @@ class SecondActivity : AppCompatActivity() {
                 "any",    // Gender
                 false      // Disability (true for students with disability)
             ),
-
-
-
             Scholarships(
                 "Mohan T Advani Centennial Scholarship Programme",
                 "Blue Star Foundation",
                 "upto 75000",
                 "Less than 2.5 LPA",
-                "First and second-year students enrolled in a degree programme in architecture or engineering",
+                false,
                 "initiative of SWAYAM Charitable Trust that aims to provide financial support to underprivileged students pursuing B.Tech. courses at 11 prestigious engineering institutions across India.",
                 "https://www.bluestarfoundation.in/",   // Example state
                 "any",   // Example annual family income
@@ -82,7 +67,7 @@ class SecondActivity : AppCompatActivity() {
                 "Legrand",
                 "upto 65000 pa",
                 "any",          // Annual Family Income
-                " Under this program, academically promising girl students pursuing B.Tech., B.E., B.Arch., or other undergraduate degrees in Finance or Science",          // Income
+               false ,          // Income
                 "The Legrand Empowering Scholarship Program 2024-25, a Social Initiative of Group Legrand India, aims to provide financial support to meritorious girls, differently-abled girls, Covid-affected students, LGBTQ+ students and students with single parents or orphans for their higher education.",
                 "https://legrandscholarship.co.in/",          // Link (empty string for now if no link is provided)
                 "India",     // State
@@ -95,7 +80,7 @@ class SecondActivity : AppCompatActivity() {
             "Tata Group",
             "Varies",
             "upto 10000",          // Annual Family Income
-            "Students pursuing various courses like Engineering, Medical, etc.",          // Income
+            false,          // Income
             "Tata Scholarship for Engineering students is offered by the Tata Education and Development Trust to facilitate the higher education of students. Tata Scholarships are offered by various philanthropic units of the Tata group.",
             "https://www.tatatrusts.org/our-work/individual-grants-programme/education-grants",          // Link (empty string for now if no link is provided)
             "India",     // State
