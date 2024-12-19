@@ -5,8 +5,8 @@ package com.example.scholator
 data class Scholarships(
     val name: String,
     val offered_by: String,
-    val amount: String,
-    val income: String,        // Annual family income eligibility
+    val amount: Int,
+    val income: Int,        // Annual family income eligibility
     val merit: Boolean,
     val description: String,
     val link: String,

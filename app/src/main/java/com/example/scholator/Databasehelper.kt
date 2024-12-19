@@ -89,6 +89,7 @@
 
 
 // Package declaration
+// Package declaration
 package com.example.scholator
 
 // Import statements
@@ -99,12 +100,13 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 
+
 // DatabaseHelper class to manage database creation and operations
 class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     companion object {
         private const val DATABASE_NAME = "scholarships.db"
-        private const val DATABASE_VERSION = 2
+        private const val DATABASE_VERSION = 3
         private const val TABLE_NAME = "scholarships"
         private const val COLUMN_NAME = "name"
         private const val COLUMN_OFFERED_BY = "offered_by"
@@ -126,8 +128,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 _id INTEGER PRIMARY KEY AUTOINCREMENT,
                 $COLUMN_NAME TEXT,
                 $COLUMN_OFFERED_BY TEXT,
-                $COLUMN_AMOUNT TEXT,
-                $COLUMN_INCOME TEXT,
+                $COLUMN_AMOUNT INTEGER, -- Changed to INTEGER
+                $COLUMN_INCOME INTEGER, -- Changed to INTEGER
                 $COLUMN_MERIT INTEGER,
                 $COLUMN_DESCRIPTION TEXT,
                 $COLUMN_LINK TEXT,
@@ -141,10 +143,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
     }
 
     // Method to handle database upgrades
-    // Method to handle database upgrades
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         if (oldVersion < 2) {
-            db?.execSQL("ALTER TABLE $TABLE_NAME ADD COLUMN $COLUMN_INCOME TEXT")
             db?.execSQL("ALTER TABLE $TABLE_NAME ADD COLUMN $COLUMN_MERIT INTEGER DEFAULT 0")
         }
         if (oldVersion < 3) {
@@ -195,8 +195,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             while (it.moveToNext()) {
                 val name = it.getString(it.getColumnIndexOrThrow(COLUMN_NAME))
                 val offeredBy = it.getString(it.getColumnIndexOrThrow(COLUMN_OFFERED_BY))
-                val amount = it.getString(it.getColumnIndexOrThrow(COLUMN_AMOUNT))
-                val income = it.getString(it.getColumnIndexOrThrow(COLUMN_INCOME))
+                val amount = it.getInt(it.getColumnIndexOrThrow(COLUMN_AMOUNT)) // Retrieve as INTEGER
+                val income = it.getInt(it.getColumnIndexOrThrow(COLUMN_INCOME)) // Retrieve as INTEGER
                 val merit = it.getInt(it.getColumnIndexOrThrow(COLUMN_MERIT)) == 1 // Convert to Boolean
                 val description = it.getString(it.getColumnIndexOrThrow(COLUMN_DESCRIPTION))
                 val link = it.getString(it.getColumnIndexOrThrow(COLUMN_LINK))
@@ -225,6 +225,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         return scholarships
     }
 }
+
 
 
 
